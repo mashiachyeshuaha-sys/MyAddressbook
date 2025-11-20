@@ -79,7 +79,7 @@ public class AddressbookUI extends UI {
         contactList.setColumnOrder("firstName", "lastName", "email");
         contactList.removeColumn("id");
         contactList.removeColumn("birthDate");
-        contactList.removeColumn("phones");
+        contactList.removeColumn("phone");
         contactList.setSelectionMode(Grid.SelectionMode.SINGLE);
         contactList.addSelectionListener(
                 e -> contactForm.edit((Contact) contactList.getSelectedRow()));
